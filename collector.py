@@ -15,7 +15,7 @@ parser.add_argument('hosts', metavar='host', nargs='+',
 
 args = parser.parse_args()
 
-sender = graphite.Sender(server='swamp'	)
+sender = graphite.Sender()
 
 for host in args.hosts:
   cgminer = Cgminer(host=host)
