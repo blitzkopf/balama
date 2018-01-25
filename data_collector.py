@@ -65,7 +65,7 @@ class Collector(threading.Thread):
 		i=0
 		for pool in pools:
 			res=self.numbers_only(pool)
-			self.sender.send(res,tm,self.tags,'pools.'+str(i))
+			self.sender.send(res,tm,self.tags,'pools.'+str(i)+'.')
 			i += 1
 		
 	def numbers_only(self,data):
